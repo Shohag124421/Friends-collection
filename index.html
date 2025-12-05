@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="logooo.png" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <title>friends Collection</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-side">
+        <img src="logooo.png" alt="logo img" />
+        <div class="logo-text">
+          <h2>Friends collection</h2>
+          <h6>Perfume | Stationary | Food</h6>
+        </div>
+      </div>
+      <div class="add-btn">
+        <i class="fas fa-cart-shopping cart" id="cart"></i>
+        <span></span>
+        <div class="user-account">
+          <i class="fas fa-user user-icon" id="btn"></i>
+          <i class="fas fa-times close" id="close"></i>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <i class="fas fa-bars menu-bar" id="menuBtn"></i>
+      <div class="responsive-menu">
+        <div class="dropdown-list">
+          <div class="category" id="category">
+            <a href="#">
+              <i class="fas fa-bars"></i>
+              <span>Categories</span>
+            </a>
+          </div>
+          <div class="cat-list" id="cat-list">
+            <a href="#">Stationary</a>
+            <a href="#">Perfume</a>
+            <a href="#">Food</a>
+            <a href="#">Fashion</a>
+          </div>
+        </div>
+        <a href="#"><span>Home</span></a>
+        <a href="#"><span>Product's</span></a>
+        <a href="#"><span>Our services</span></a>
+        <a href="#"><span>Contact Us</span></a>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="search here..." id="searchBox" />
+        <button id="searchBtn"><i class="fas fa-search search"></i></button>
+      </div>
+    </nav>
+    <main>
+      <div class="Login-form" id="hide">
+    <div class="login">
+        <div class="login-section" id="logIn">
+            <div class="login-side">
+                <div class="popup-txt">
+                    Login 
+                </div>
+                <div class="login-page">
+                    <div class="social-login">
+                        <a href="#" class="button" target="_blank">
+                        <div class="icon" style="--i:1;--clr:#4267B2">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <span style="--i:1;--clr:#4267B2">Facebook</span>
+                        </a>
+                        <a href="#" class="button" target="_blank">
+                        <div class="icon" style="--i:3;--clr:#34A853">
+                            <i class="fab fa-google"></i>
+                        </div>
+                        <span style="--i:3;--clr:#34A853">Google</span>
+                        </a>
+                        <a href="#" class="button" target="_blank">
+                        <div class="icon" style="--i:4;--clr:#ee0808">
+                            <i class="fab fa-apple"></i>
+                        </div>
+                        <span style="--i:4;--clr:#ee0808">Apple</span>
+                        </a>
+                    </div>
+                    <div class="or">
+                        <hr> <span> OR </span> <hr>
+                    </div>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon"> <i class="fa-solid fa-envelope"></i> </span>
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"> <i class="fa-solid fa-lock"></i> </span>
+                            <div class="eye-user">
+                                <input type="password" placeholder="Password" required>
+                                <i class="fa-regular fa-eye eye" id="togglePassword"></i>
+                            </div>
+                        </div>
+                        <div class="remember-forgot">
+                            <label><input type="checkbox"> Remember me </label>
+                            <a href="#"> Forgot Password? </a>
+                        </div>
+                        <button type="submit" class="btn"> Login </button>
+                    </form>
+                </div>
+            </div>
+            <div class="welcome-txt">
+                <h3> Welcome back!</h3>  
+                <p>Your saved progress is ready....</p>  
+                <p>Check out the latest updates.</p>
+                <div class="or">
+                    <hr> <span> OR </span> <hr>
+                </div>
+                <h4>Don’t have an account?</h4>
+                <button id="sign-up"> Sign Up</button>
+            </div>
+        </div>
+        <div class="signup-section" id="signUp">
+            <div class="welcome-txt">
+                <h3> New here!</h3>
+                <p>Create an account now.</p>  
+                <p>Let’s start your journey!</p>
+                <div class="or">
+                    <hr> <span> OR </span> <hr>
+                </div>
+                <h4> Already Have an account?</h4>
+                <button id="log-in"> Log-in </button>
+            </div>
+            <div class="signup-side">
+                <div class="popup-txt">
+                    Sign-Up
+                </div>
+                <div class="signup-page">
+                    <div class="social-login">
+                        <a href="#" class="button" target="_blank">
+                        <div class="icon" style="--i:1;--clr:#4267B2">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <span style="--i:1;--clr:#4267B2">Facebook</span>
+                        </a>
+                        <a href="#" class="button" target="_blank">
+                        <div class="icon" style="--i:3;--clr:#34A853">
+                            <i class="fab fa-google"></i>
+                        </div>
+                        <span style="--i:3;--clr:#34A853">Google</span>
+                        </a>
+                        <a href="#" class="button" target="_blank">
+                        <div class="icon" style="--i:4;--clr:#ee0808">
+                            <i class="fab fa-apple"></i>
+                        </div>
+                        <span style="--i:4;--clr:#ee0808">Apple</span>
+                        </a>
+                    </div>
+                    <div class="or">
+                        <hr> <span> OR </span> <hr>
+                    </div>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon"> <i class="fas fa-user"></i> </span>
+                            <input type="text" placeholder="Full Name..." required>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"> <i class="fa-solid fa-envelope"></i> </span>
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"> <i class="fa-solid fa-lock"></i> </span>
+                            <div class="eye-user">
+                                <input type="password" placeholder="Password" required>
+                                <i class="fa-regular fa-eye eye" id="togglePassword"></i>
+                            </div>
+                        </div>
+                        <div class="remember-forgot">
+                            <label><input type="checkbox"> Remember me </label>
+                            <a href="#"> Forgot Password? </a>
+                        </div>
+                        <button type="submit" class="btn"> Signup </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+      <div class="display">
+        <img src="display.jpg" alt="product image" />
+      </div>
+
+      <div class="Product-category">
+        <div class="text">
+          <p>Product category</p>
+          <div class="button" id="scrollbtn">
+            <i class="fas fa-chevron-left left" id="left"></i>
+            <i class="fas fa-chevron-right right" id="right"></i>
+          </div>
+        </div>
+
+        <!-- AUTO UPDATED PRODUCT LIST -->
+        <div class="categories" id="categories"></div>
+      </div>
+
+
+      <div class="all-products">
+        <div class="text">
+          <p> All products</p>
+          <div class="button" id="scrollbtn">
+            <i class="fas fa-chevron-left left" id="left"></i>
+            <i class="fas fa-chevron-right right" id="right"></i>
+          </div>
+        </div>
+
+        <!-- AUTO UPDATED PRODUCT LIST -->
+        <div class="product-list" id="allProduct"></div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="information">
+        <div class="follow">
+          <h2>Friends Collection</h2>
+          <h4>
+            your one-stop shop for Stationary & perfume.<br />
+            Shop Everything
+          </h4>
+          <div class="social">
+            <a href="#Footer"><i class="fab fa-facebook-f"></i></a>
+            <a href="#footer"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="condition">
+          <h2>Policies & info</h2>
+          <a href="#footer">Privacy Policy</a>
+          <a href="#footer">Terms of Service</a>
+          <a href="#footer">Return Policy</a>
+          <a href="#footer">Shipping Info</a>
+        </div>
+        <div class="contact">
+          <h2>Contact Us on:</h2>
+          <div class="social">
+            <a href="https://wa.me/message/UXTJQMKRRQVVG1" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="mailto:ssshohagbiswas@gmail.com">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="tel:+8801867805497">
+              <i class="fas fa-phone"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <span class="line"></span>
+      <p>&copy; 2025 friends collection. All rights reserved.</p>
+      <p>developed by :<a href="#footer">Shohag Biswas</a></p>
+    </footer>
+  </body>
+</html>
