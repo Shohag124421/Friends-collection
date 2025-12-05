@@ -1,0 +1,50 @@
+<!-- dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends collection - Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css"/>
+    
+</head>
+<body>
+
+<div class="sidebar">
+    <div class="brand">
+    <img src="logooo.png" alt="Logo" class="logo"/>
+    <h2>Friends collection</h2>
+    </div>
+    <a href="#categories">Categories</a>
+    <a href="#Products">Products</a>
+    <a href="#">Orders</a>
+    <a href="#">Users</a>
+    <a href="admin.html">Logout</a>
+</div>
+
+<div class="main-content">
+    <h1>Welcome, Admin!</h1>
+    
+    <div class="categories" id="categories">
+        <h3>Product Category</h3>
+    </div>
+
+    <div class="add-product">
+        <input type="text" id="productName" placeholder="Product Name / Category">
+        <input type="file" id="productImage" accept="image/*">
+        <button id="addProductBtn">Add Product</button>
+    </div>
+
+
+    <div class="all-products" id="allProduct">
+        <h3>All Products</h3>
+    </div>
+
+    <div class="New-products" id="newProduct">
+        <h3>Total Users</h3>
+        <p>120</p>
+    </div>
+</div>
+<script src="admin.js" defer></script>
+</body>
+</html>

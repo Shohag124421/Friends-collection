@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f4f4f9;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #2c3e50;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar img {
+    height: 100px;
+    width: 100px;
+
+}
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar a {
+    display: block;
+    color: #fff;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background: #34495e;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.categories,
+.all-products,
+.New-products {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.categories {
+    display: flex;
+    flex-wrap: nowrap; /* nowrap = সব এক row-এ থাকবে */
+    gap: 10px;
+    overflow-x: auto; /* horizontal scroll যোগ করবে */
+    padding-bottom: 10px; /* scrollbar space এর জন্য */
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.categories::-webkit-scrollbar {
+    height: 8px; /* scrollbar height */
+}
+
+.categories::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+.categories a {
+    flex: 0 0 120px; /* fixed width, nowrap row */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #000;
+    position: relative;
+}
+
+.categories a img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.categories a button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 2px 5px;
+}
+
+.add-product {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.add-product input {
+    padding: 5px;
+}
+
