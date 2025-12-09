@@ -63,27 +63,32 @@ document.querySelectorAll('.eye').forEach(icon => {
 
 /* ==========================toggle categories========================== */ 
 
-catBtn.addEventListener("click", function (e) {
-    e.preventDefault();
-    catList.classList.toggle("show");
-});
+/* ==========================Load Admin Photos========================== */
 
-document.addEventListener("click", function (e) {
-    if (!catBtn.contains(e.target) && !catList.contains(e.target)) {
-        catList.classList.remove("show");
-    }
-});
+// Target the category box on index page
+const categoryBox = document.getElementById("categories");
 
-/* ==========================Search========================== */ 
+// Load categories from localStorage
+let categories = JSON.parse(localStorage.getItem("categories")) || [];
 
-searchBtn.addEventListener('click', () => {
-    const query = searchBox.value.trim();
-    if (query) {
-        console.log('searching for:', query);
-    } else {
-        alert('please type something to search');
-    }
-});
+// Show category items
+function displayCategories() {
+    categoryBox.innerHTML = ""; // Clear previous
+
+    categories.forEach(cat => {
+        const card = document.createElement("div");
+        card.classList.add("category-card");
+
+        card.innerHTML = `
+            <img src="${cat.image}" alt="${cat.name}" />
+            <p>${cat.name}</p>
+        `;
+
+        categoryBox.appendChild(card);
+    });
+}
+
+displayCategories();
 
 /* ==========================Load Admin Photos========================== */
 
